@@ -1,0 +1,561 @@
+{
+	"id": "9bc141cc-1349-4bd9-98ab-620fd6504a88",
+	"name": "hw 13",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"b194ea5b-f5d3-4b1c-8bfe-f80264a5d363",
+		"86e6c509-deb6-4cb9-b587-4172e9134c4b",
+		"08aefb50-1733-45b5-8c69-553ebb8ea857",
+		"f5ee3a49-ca35-4d19-aa97-327816f9e4a9",
+		"663f2974-0f5f-4389-9eab-496c24d75955",
+		"787def5c-3484-4a6d-8967-59bc496413bf",
+		"7d5e8754-cb88-47ef-8e51-5d28dfd1312f",
+		"36a7df71-96f2-43e0-a566-21bc3271a4f5",
+		"432fbb51-824a-4dc6-97f7-a609eeadca37"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "08aefb50-1733-45b5-8c69-553ebb8ea857",
+			"name": "incorrect email",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"email\": \"sh@gmail\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "36a7df71-96f2-43e0-a566-21bc3271a4f5",
+			"name": "incorrect address",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"email\": \"vuppovejom-7528@yopmail.com\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"female\",\n    \"status\": \"active\",\n    \"dob\": \"null\",\n    \"phone\": \"89101111111\",\n    \"website\": \"https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0\",\n    \"address\": \"32u27642824     @@@@@\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "432fbb51-824a-4dc6-97f7-a609eeadca37",
+			"name": "incorrect dob & phone",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"email\": \"ipiqumoj-6232@yopmail.com\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"female\",\n    \"status\": \"active\",\n    \"dob\": \"10.39.000\",\n    \"phone\": \"0000000000000000      00\",\n    \"website\": \"https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0\",\n    \"address\": \"null, something, what\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "663f2974-0f5f-4389-9eab-496c24d75955",
+			"name": "empty field",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"email\": \"  \",\n    \"first_name\": \" \",\n    \"last_name\": \" \",\n    \"gender\": \" \",\n    \"status\": \"  \"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "787def5c-3484-4a6d-8967-59bc496413bf",
+			"name": "incorrect gender & status",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "76a321eb-4e28-413c-9dac-a2f1351d50e8",
+					"name": "incorrect gender & status",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"_meta\": {\n        \"success\": false,\n        \"code\": 422,\n        \"message\": \"Data validation failed. Please check the response body for detailed error messages.\",\n        \"rateLimit\": {\n            \"limit\": 30,\n            \"remaining\": 29,\n            \"reset\": 2\n        }\n    },\n    \"result\": [\n        {\n            \"field\": \"status\",\n            \"message\": \"Status is invalid.\"\n        },\n        {\n            \"field\": \"gender\",\n            \"message\": \"Gender is invalid.\"\n        }\n    ]\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": [],
+						"dataMode": "raw",
+						"dataOptions": {
+							"raw": {
+								"language": "json"
+							}
+						},
+						"headerData": [],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://gorest.co.in/public-api/users",
+						"rawModeData": "{\n    \"email\": \"esurrybo-1593@yopmail.com\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"false\",\n    \"status\": \"passive\"\n}"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Mar 2020 03:34:43 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "X-Rate-Limit-Limit",
+							"value": "30"
+						},
+						{
+							"key": "X-Rate-Limit-Remaining",
+							"value": "29"
+						},
+						{
+							"key": "X-Rate-Limit-Reset",
+							"value": "2"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_csrf=0a0834a1fc31501b4c07f1a7016bfc4625d20f1baee843468fa05e59b69c47f0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e5rGfqoysFL30fxVPrXexSJ-FiFfvFCQ%22%3B%7D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "sameorigin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookies": null,
+					"request": "787def5c-3484-4a6d-8967-59bc496413bf",
+					"collection": "9bc141cc-1349-4bd9-98ab-620fd6504a88"
+				}
+			],
+			"rawModeData": "{\n    \"email\": \"esurrybo-1593@yopmail.com\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"false\",\n    \"status\": \"passive\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "7d5e8754-cb88-47ef-8e51-5d28dfd1312f",
+			"name": "incorrect dob",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"email\": \"inneqaqu-9009@yopmail.com\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"female\",\n    \"status\": \"active\",\n    \"dob\": \"35.38.1000\",\n    \"phone\": \"89101111111\",\n    \"website\": \"https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0\",\n    \"address\": \"null\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "86e6c509-deb6-4cb9-b587-4172e9134c4b",
+			"name": "True with data",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"email\": \"tanadaqill-2036@yopmail.com\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"female\",\n    \"status\": \"active\",\n    \"dob\": \"10.10.2000\",\n    \"phone\":\"89101111111\",\n    \"website\": \"https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0\",\n    \"address\": \"null\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "b194ea5b-f5d3-4b1c-8bfe-f80264a5d363",
+			"name": "True",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "60dbbf7e-4546-4fdb-98da-830243d67b09",
+					"name": "True",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"_meta\": {\n        \"success\": true,\n        \"code\": 200,\n        \"message\": \"OK. Everything worked as expected.\",\n        \"rateLimit\": {\n            \"limit\": 30,\n            \"remaining\": 28,\n            \"reset\": 4\n        }\n    },\n    \"result\": {\n        \"id\": \"9335\",\n        \"first_name\": \"Polina\",\n        \"last_name\": \"Kolom\",\n        \"gender\": \"female\",\n        \"dob\": null,\n        \"email\": \"fujeqicub-4027@yopmail.com\",\n        \"phone\": null,\n        \"website\": null,\n        \"address\": null,\n        \"status\": \"active\",\n        \"_links\": {\n            \"self\": {\n                \"href\": \"https://gorest.co.in/public-api/users/9335\"\n            },\n            \"edit\": {\n                \"href\": \"https://gorest.co.in/public-api/users/9335\"\n            },\n            \"avatar\": {\n                \"href\": null\n            }\n        }\n    }\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": [],
+						"dataMode": "raw",
+						"dataOptions": {
+							"raw": {
+								"language": "json"
+							}
+						},
+						"headerData": [],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://gorest.co.in/public-api/users",
+						"rawModeData": "{\n    \"email\": \"fujeqicub-4027@yopmail.com\",\n    \"first_name\": \"Polina\",\n    \"last_name\": \"Kolom\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n}"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Mar 2020 03:31:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "X-Rate-Limit-Limit",
+							"value": "30"
+						},
+						{
+							"key": "X-Rate-Limit-Remaining",
+							"value": "28"
+						},
+						{
+							"key": "X-Rate-Limit-Reset",
+							"value": "4"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_csrf=c762cbac4ac48aea7bdfc452858fb590d4c648284299c7bd96a59c734e3ae018a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22SP8bZV69hxY7HW8UPWqIegg3jkAbTje7%22%3B%7D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "sameorigin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookies": null,
+					"request": "b194ea5b-f5d3-4b1c-8bfe-f80264a5d363",
+					"collection": "9bc141cc-1349-4bd9-98ab-620fd6504a88"
+				}
+			],
+			"rawModeData": "{\n    \"email\": \"ridenutep-3351@yopmail.com\",\n    \"first_name\": \"Polina\",\n    \"last_name\": \"Kolom\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "f5ee3a49-ca35-4d19-aa97-327816f9e4a9",
+			"name": "incorrect gender",
+			"url": "https://gorest.co.in/public-api/users",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "gd2jyTQLQgJhSKGwXsJsn7xYB01Jmnano517"
+					}
+				]
+			},
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "2f8818c9-5288-4912-b280-eca6181a75ca",
+					"name": "incorrect gender",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"_meta\": {\n        \"success\": false,\n        \"code\": 422,\n        \"message\": \"Data validation failed. Please check the response body for detailed error messages.\",\n        \"rateLimit\": {\n            \"limit\": 30,\n            \"remaining\": 29,\n            \"reset\": 2\n        }\n    },\n    \"result\": [\n        {\n            \"field\": \"gender\",\n            \"message\": \"Gender is invalid.\"\n        }\n    ]\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": [],
+						"dataMode": "raw",
+						"dataOptions": {
+							"raw": {
+								"language": "json"
+							}
+						},
+						"headerData": [],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://gorest.co.in/public-api/users",
+						"rawModeData": "{\n    \"email\": \"ugededda-1809@yopmail.com\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"not\",\n    \"status\": \"active\"\n}"
+					},
+					"headers": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Mar 2020 03:30:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "X-Rate-Limit-Limit",
+							"value": "30"
+						},
+						{
+							"key": "X-Rate-Limit-Remaining",
+							"value": "29"
+						},
+						{
+							"key": "X-Rate-Limit-Reset",
+							"value": "2"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_csrf=4097bd166f152eeccae6fb2939b228d1469f958e1babcc2ae96325ec62e29970a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qUGUkZhIomUhFmL5szoohN-lovyQEXS5%22%3B%7D; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "sameorigin"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookies": null,
+					"request": "f5ee3a49-ca35-4d19-aa97-327816f9e4a9",
+					"collection": "9bc141cc-1349-4bd9-98ab-620fd6504a88"
+				}
+			],
+			"rawModeData": "{\n    \"email\": \"ugededda-1809@yopmail.com\",\n    \"first_name\": \"Galin\",\n    \"last_name\": \"Br\",\n    \"gender\": \"not\",\n    \"status\": \"active\"\n}",
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
